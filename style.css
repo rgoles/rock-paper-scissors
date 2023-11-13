@@ -1,0 +1,167 @@
+body {
+    font-family: 'Poppins', sans-serif;
+    background-color: #192546;
+    color: white;
+    margin: 0 20%;
+}
+
+.flex {
+    display: flex;
+    justify-content: center;
+}
+.text-center {
+    text-align: center;
+}
+
+nav {
+    margin-top: 50px;
+}
+
+.logo--score-card {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    border: grey 2px solid;
+    border-radius: 12px;
+    padding: 12px 12px;
+}
+.score-card {
+    display: flex;
+    align-items: center;
+    flex-direction: column;
+    padding: 6px 20px;
+}
+#score-num {
+    font-size: 25px;
+}
+.part-one {
+    display: flex;
+    justify-content: center;
+    margin-top: 35px;
+
+    background-image: url("img/bg-triangle.svg");
+    background-repeat: no-repeat;
+    background-position: center;
+}
+
+.player-options {
+    margin: 2vh 15vh;
+}
+
+.action-buttons {
+    display: flex;
+    justify-content: space-evenly;
+    flex-wrap: wrap;
+    width: 85%;
+    height: 100%;
+}
+
+button:active {
+    opacity: 0.8%;
+}
+
+footer {
+    display: flex;
+    justify-content: end;
+}
+
+.modal {
+    background-color: rgba(0, 0, 0, 0.3%);
+    opacity: 0;
+    position: fixed;
+    top: 0;
+    left: 0;
+    right: 0;
+    bottom: 0;
+    transition: all 0.3s ease-in-out;
+    z-index: -1;
+
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.modal.open {
+    opacity: 1;
+    z-index: 999;
+    background-color: rgba(0, 0, 0, 40%);
+}
+
+.modal-inner {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    background-color: #ffff;
+    border-radius: 5px;
+    box-shadow: 0 1px 4px rgba(0, 0, 0, 0.3%);
+    padding: 15px 25px;
+    text-align: center;
+    width: 380px;
+}
+
+.modal-inner h2 {
+    color: black;
+}
+
+#openModal {
+    padding: 10px 30px;
+    border-radius: 10px;
+    background-color: rgba(0, 0, 0, 0%);
+    border-color: #ffff;
+    color: #ffff;
+}
+
+#closeModal {
+    margin-top: 25px;
+}
+
+
+/* ----- SECOND PART ------- */
+
+.part-two {
+    display: none;
+    flex-direction: column;
+    justify-content: space-evenly;
+}
+
+.chosen-item {
+    display: flex;
+    justify-content: space-evenly;
+}
+
+/* Define a CSS animation for showing the choices */
+@keyframes fadeIn {
+    from {
+        opacity: 0;
+    }
+    to {
+        opacity: 1;
+    }
+}
+
+/* Define a CSS animation for hiding the choices */
+@keyframes fadeOut {
+    from {
+        opacity: 1;
+    }
+    to {
+        opacity: 0;
+    }
+}
+
+/* Apply the animation to the elements with the 'animated' class */
+.animated {
+    animation: fadeIn 2s forwards; /* Play the fadeIn animation */
+}
+
+/* Apply the animation to hide the elements */
+.hidden {
+    animation: fadeOut 2s forwards; /* Play the fadeOut animation */
+    display: none; /* Hide the element after animation */
+}
+
+.winner-and-repeat-text {
+    display: flex;
+    justify-content: center;
+    flex-direction: column;
+}

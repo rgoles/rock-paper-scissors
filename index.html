@@ -1,0 +1,68 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <!-- displays site properly based on user's device -->
+
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@100;200;300;400;500;600;700;800;900&display=swap"
+          rel="stylesheet">
+    <link rel="icon" type="image/png" sizes="32x32" href="./img/page-icon.jpeg">
+    <link rel="stylesheet" href="style.css">
+    <title>Frontend Mentor | Rock, Paper, Scissors</title>
+    <!-- Feel free to remove these styles or customise in your own stylesheet 👍 -->
+</head>
+<body>
+<nav>
+    <div class="logo--score-card">
+        <img src="img/logo.svg" alt="">
+        <div class="score-card">
+            <p>SCORE</p>
+            <p id="score-num">0</p>
+        </div>
+    </div>
+</nav>
+
+<section class="part-one" id="page-one">
+    <div class="action-buttons player-options">
+        <div class="action"><img src="img/paperButton.png" alt="" id="paper"></div>
+        <div class="action"><img src="img/scissorsButton.png" alt="" id="scissors"></div>
+        <div class="action"><img src="img/rockButton.png" alt="" id="rock"></div>
+    </div>
+</section>
+
+<!-- -------------------------------------------------------- -->
+
+<section class="part-two" id="page-two">
+    <div class="chosen-item">
+        <div class="userChoice text-center">
+            <p>YOU PICKED</p>
+        </div>
+        <div class="winner-and-repeat-text">
+            <p id="winner">Who won?</p>
+            <button id="play-again">Play again</button>
+        </div>
+        <div class="computerChoice text-center">
+            <p>THE HOUSE PICKED</p>
+        </div>
+    </div>
+</section>
+
+
+<footer>
+    <button id="openModal">RULES</button>
+    <div class="modal" id="modal">
+        <div class="modal-inner">
+            <h2>RULES</h2>
+            <img src="img/image-rules.svg" alt="">
+            <button id="closeModal">Close</button>
+        </div>
+    </div>
+</footer>
+
+
+<script src="script.js"></script>
+</body>
+</html>
