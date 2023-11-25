@@ -39,9 +39,6 @@ nav {
     justify-content: center;
     margin-top: 35px;
 
-    background-image: url("img/bg-triangle.svg");
-    background-repeat: no-repeat;
-    background-position: center;
 }
 
 .player-options {
@@ -164,4 +161,8 @@ footer {
     display: flex;
     justify-content: center;
     flex-direction: column;
+}
+
+.computerChoice {
+    width: 13rem;
 }
